@@ -1,0 +1,14 @@
+{
+  "name": "vortex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/main.scss css/style.css"
+  },
+  "author": "zuhran",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

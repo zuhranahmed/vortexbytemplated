@@ -1,0 +1,692 @@
+// Basic Styling
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 37.5em) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: 25em) {
+    font-size: 37.25%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  color: #333;
+
+  background-image: linear-gradient(
+    to right bottom,
+    #9aecdb,
+    #6bd6dd,
+    #47bddf,
+    #46a2da,
+    #6184ca,
+    #5b85c6,
+    #5785c2,
+    #5385be,
+    #509fbe,
+    #74b3b7,
+    #a2c4b8,
+    #cad3c8
+  );
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+// Buttons
+
+.btn-main {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 3px solid #fff;
+  border-radius: 50px;
+
+  color: #fff;
+  font-weight: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: rgba(#fff, 0.2);
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 3px solid rgba(#333, 0.4);
+  border-radius: 50px;
+
+  color: #333;
+  font-weight: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 3px solid #6184ca;
+    color: #6184ca;
+    background-color: rgba(#cad3c8, 0.2);
+  }
+}
+
+// Container
+.container {
+  max-width: 80vw;
+  margin: 10rem auto;
+
+  @media screen and (max-width: 56.25em) {
+    max-width: 90vw;
+    margin: 6rem auto;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    margin: 4rem auto;
+  }
+  @media screen and (max-width: 25em) {
+    margin: 3rem auto;
+  }
+}
+
+.header {
+  padding: 28rem 6rem 28rem 6rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#9aecdb, 0.6),
+      rgba(#6bd6dd, 0.6),
+      rgba(#47bddf, 0.6),
+      rgba(#46a2da, 0.6),
+      rgba(#6184ca, 0.6),
+      rgba(#5b85c6, 0.6),
+      rgba(#5785c2, 0.6),
+      rgba(#5385be, 0.6),
+      rgba(#509fbe, 0.6),
+      rgba(#74b3b7, 0.6),
+      rgba(#a2c4b8, 0.6),
+      rgba(#cad3c8, 0.6)
+    ),
+    url(../img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 75em) {
+    padding: 24rem 6rem 24rem 6rem;
+  }
+
+  @media screen and (max-width: 56.25em) {
+    height: 60vh;
+    padding: 20rem 6rem 20rem 6rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    height: 60vh;
+    padding: 14rem 4rem 14rem 4rem;
+    margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 25em) {
+    height: 80vh;
+    padding: 12rem 4rem 12rem 4rem;
+  }
+
+  &__heading {
+    color: #fff;
+    font-size: 6.2rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 75em) {
+      font-size: 5.2rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+      font-size: 4.2rem;
+    }
+
+    @media screen and (max-width: 37.5em) {
+      font-size: 3.2rem;
+    }
+    @media screen and (max-width: 25em) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+// section a styling
+
+.a {
+  background-color: #fff;
+  padding: 14rem 6rem 14rem 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 75em) {
+    padding: 12rem 6rem 12rem 6rem;
+  }
+
+  @media screen and (max-width: 56.25em) {
+    padding: 10rem 6rem 10rem 6rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    padding: 8rem 4rem 8rem 4rem;
+  }
+
+  @media screen and (max-width: 25em) {
+    padding: 6rem 3rem 6rem 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    font-size: 3.8rem;
+    line-height: 1;
+
+    @media screen and (max-width: 75em) {
+      font-size: 3.6rem;
+    }
+    @media screen and (max-width: 56.25em) {
+      font-size: 3.2rem;
+    }
+    @media screen and (max-width: 37.5em) {
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 25em) {
+      font-size: 2rem;
+    }
+  }
+
+  &__details {
+    width: 50%;
+    line-height: 2;
+
+    @media screen and (max-width: 75em) {
+      width: 60%;
+    }
+    @media screen and (max-width: 56.25em) {
+      line-height: 1.6;
+    }
+    @media screen and (max-width: 37.5em) {
+      line-height: 1.4;
+      width: 80%;
+    }
+    @media screen and (max-width: 25em) {
+      line-height: 1.2;
+      width: 90%;
+    }
+  }
+}
+
+// Blank Line
+
+.blank-line {
+  height: 3px;
+  width: 30%;
+  background-color: rgba(#333, 0.7);
+  margin: 3rem auto;
+  @media screen and (max-width: 25em) {
+    height: 1.5px;
+  }
+}
+.blank-line-white {
+  height: 3px;
+  width: 30%;
+  background-color: rgba(#fff, 0.7);
+  margin: 3rem auto;
+  @media screen and (max-width: 25em) {
+    height: 1.5px;
+  }
+}
+
+// Section b Styling
+
+.b img {
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 56.25em) {
+    margin-bottom: 3rem;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    margin-bottom: 2rem;
+    height: 200px;
+  }
+  @media screen and (max-width: 25em) {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+
+// Section c Styling
+
+.c {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #fff;
+
+  @media screen and (max-width: 75em) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .grid-3 {
+      border-right: 1px solid rgba(#333, 0.4);
+    }
+  }
+
+  @media screen and (max-width: 37.5em) {
+    grid-template-columns: 1fr;
+  }
+
+  &__grid {
+    text-align: center;
+    padding: 10rem 10rem;
+    border-bottom: 1px solid rgba(#333, 0.4);
+
+    @media screen and (max-width: 75em) {
+      padding: 8rem 8rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+      padding: 6rem 6rem;
+    }
+    @media screen and (max-width: 37.5em) {
+      padding: 4rem 4rem;
+    }
+
+    &--icon {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(#333, 0.4);
+      border-radius: 50%;
+    }
+
+    &--heading {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    &--details {
+      line-height: 1.6;
+      color: rgba(#333, 0.7);
+    }
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-4,
+  .grid-5 {
+    border-right: 1px solid rgba(#333, 0.4);
+  }
+}
+
+// Section d Styling
+
+.d {
+  background-color: #fff;
+  text-align: center;
+  padding: 5rem 2.5rem;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 56.25em) {
+    margin-bottom: 3rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    margin-bottom: 2rem;
+  }
+}
+
+// Section Gallery Styling
+
+.gallery {
+  background-color: #fff;
+  padding: 10rem;
+  border-top: 1px solid rgba(#333, 0.4);
+  margin-bottom: 5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+
+  @media screen and (max-width: 75em) {
+    padding: 8rem;
+  }
+
+  @media screen and (max-width: 56.25em) {
+    padding: 6rem;
+    margin-bottom: 3rem;
+  }
+  @media screen and (max-width: 37.5em) {
+    padding: 4rem;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 25em) {
+    padding: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    text-align: center;
+    overflow: hidden;
+    &--img {
+      height: 350px;
+      object-fit: cover;
+      object-position: top;
+
+      margin-bottom: 1.5rem;
+      transition: all 0.4s;
+
+      @media screen and (max-width: 56.25em) {
+        height: 300px;
+      }
+      @media screen and (max-width: 37.5em) {
+        height: 250px;
+      }
+      @media screen and (max-width: 25em) {
+        height: auto;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &--details {
+      margin-bottom: 1.5rem;
+      padding: 0 1rem;
+      color: rgba(#333, 0.7);
+    }
+  }
+}
+
+// Section Contact Styling
+
+.contact {
+  background-color: #509fbe;
+  color: #fff;
+  padding: 14rem 6rem 14rem 6rem;
+  border-bottom: 1px solid rgba(#fff, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 75em) {
+    padding: 12rem 6rem 12rem 6rem;
+  }
+
+  @media screen and (max-width: 56.25em) {
+    padding: 10rem 6rem 10rem 6rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    padding: 6rem 4rem 6rem 4rem;
+  }
+
+  @media screen and (max-width: 25em) {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+
+  &__heading {
+    font-size: 3.8rem;
+    line-height: 1;
+
+    @media screen and (max-width: 75em) {
+      font-size: 3.6rem;
+    }
+    @media screen and (max-width: 56.25em) {
+      font-size: 3.2rem;
+    }
+    @media screen and (max-width: 37.5em) {
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 25em) {
+      font-size: 2rem;
+    }
+  }
+
+  &__details {
+    width: 50%;
+    line-height: 2;
+
+    @media screen and (max-width: 75em) {
+      width: 60%;
+    }
+    @media screen and (max-width: 37.5em) {
+      width: 80%;
+    }
+    @media screen and (max-width: 25em) {
+      width: 90%;
+    }
+  }
+}
+
+// Section Form Styling
+
+.form {
+  background-color: #509fbe;
+  text-align: center;
+
+  // Form Button
+
+  .form-btn {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: 0;
+
+    color: #fff;
+    background-color: transparent;
+    font-weight: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba(#fff, 0.2);
+    }
+  }
+  form {
+    padding: 14rem 14rem 14rem 14rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    @media screen and (max-width: 75em) {
+      padding: 6rem 12rem 6rem 12rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+      padding: 6rem 10rem 6rem 10rem;
+    }
+
+    @media screen and (max-width: 37.5em) {
+      padding: 4rem 8rem 4rem 8rem;
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 25em) {
+      padding: 4rem 6rem 4rem 6rem;
+    }
+
+    .fill {
+      grid-column: 1/3;
+      width: 100%;
+
+      @media screen and (max-width: 37.5em) {
+        grid-column: auto;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        outline: 0;
+        border: none;
+        font-size: 2.4rem;
+        border: 1px solid rgba(#fff, 0.7);
+        border-radius: 15px;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+
+    .max {
+      input {
+        width: 100%;
+        padding: 1.5rem;
+        background-color: transparent;
+        outline: 0;
+        border: none;
+        color: #fff;
+        font-size: 1.8rem;
+        border: 1px solid rgba(#fff, 0.7);
+        border-radius: 15px;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+//Section Social Styling
+
+.social {
+  border-top: 1px solid rgba(#fff, 0.4);
+  background-color: #509fbe;
+  text-align: center;
+  padding: 6rem 3rem;
+
+  @media screen and (max-width: 56.25em) {
+    padding: 4rem 3rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    padding: 3rem 1.5rem;
+  }
+
+  .fab:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  .fab {
+    padding: 1.5rem;
+    border: 1px solid rgba(#fff, 0.4);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media screen and (max-width: 37.5em) {
+      padding: 1rem;
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: 25em) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: rgba(#fff, 0.2);
+    }
+  }
+}
+
+//Footer
+
+.footer {
+  text-align: center;
+  padding: 6rem 3rem;
+  color: rgba(#333, 0.5);
+  font-size: 1.8rem;
+
+  @media screen and (max-width: 56.25em) {
+    padding: 4rem 3rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    padding: 3rem 1.5rem;
+  }
+
+  &__copyright {
+    margin-bottom: 6px;
+    @media screen and (max-width: 37.5em) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px dotted rgba(#333, 0.7);
+    transition: all 0.2s;
+    &:hover {
+      color: #333;
+      border-bottom: 1px dotted #333;
+    }
+  }
+
+  &__author {
+    span {
+      color: #333;
+      border-bottom: 1px solid rgba(#333, 0.7);
+      margin-right: 3px;
+    }
+
+    &--link {
+      transition: all 0.2s;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .fa-twitter {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+}
